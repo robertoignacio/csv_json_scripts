@@ -15,8 +15,8 @@ Expects this CSV file shape:
 
 ```
 Region,Column A,Column B,Column C,Column D
-North,1,2,3,4
-South,5,6,7,8
+North,1.1,1.2,1.3,1.4
+South,1.5,1.6,1.7,1.8
 ```
 
 "Region" item will not be included in the JSON file output shape.
@@ -27,35 +27,27 @@ JSON file required shape:
 [
     {
         "Column A": {
-        "North": 1,
-        "South": 5,
-        "East": 9,
-        "West": 13
+        "North": "1.1%",
+        "South": "1.5%",
         }
     },
     {
         "Column B": {
-        "North": 2,
-        "South": 6,
-        "East": 10,
-        "West": 14
+        "North": "1.2%",
+        "South": "1.6%",
         }
     },
     {
         "Column C": {
-        "North": 3,
-        "South": 7,
-        "East": 11,
-        "West": 15
+        "North": "1.3%",
+        "South": "1.7%",
         }
     },
     {
         "Column D": {
-        "North": 4,
-        "South": 8,
-        "East": 12,
-        "West": 16
+        "North": "1.4%",
+        "South": "1.8%",
         }
-    }, 
+    }
 ]
 ```
