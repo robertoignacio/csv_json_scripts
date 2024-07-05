@@ -6,7 +6,7 @@ csv_file_path = '../files/file.csv'
 json_file_path = '../files/file.json'
 
 '''
-This script if for an specific shape of csv file to be converted to json of a specific shape.
+This script is for an specific shape of csv file to be converted to json of a specific shape.
 
 Expected shape of the csv input file:
 
@@ -16,18 +16,22 @@ South,5,6,7,8
 
 To be converted to json, specified shape, as:
 [
-    "A": {
+    {
+        "A": {
         "North": 1,
         "South": 5,
         "East": 9,
         "West": 13
+        }
     },
-    "B": {
+    {
+        "B": {
         "North": 2,
         "South": 6,
         "East": 10,
         "West": 14
-    }, ...
+        }
+    },
 ]
 
 "Region" item will not be included in the json output.
