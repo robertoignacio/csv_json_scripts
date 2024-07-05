@@ -1,20 +1,23 @@
 # csv_json_scripts
-# Utility scripts when dealing with csv and json files
-<br>
+# Utility script for converting and reshaping a CSV file with specific shape format to a output a JSON file with a required shape format.
+
 Python scripts to convert csv to json, to a certain hierarchy shape
 Viceversa (TBA)
-<br>
+
 This script is for an specific shape of csv file to be converted to json of a specific shape.
-<br>
+
 Expected shape of the csv input file:
-<br>
+
 ```
 Region,A,B,C,D
 North,1,2,3,4
 South,5,6,7,8
 ```
-<br>
+
+"Region" item will not be included in the json output.
+
 To be converted to json, specified shape, as:
+
 ```
 [
     {
@@ -35,5 +38,4 @@ To be converted to json, specified shape, as:
     },
 ]
 ```
-<br>
-"Region" item will not be included in the json output.
+
