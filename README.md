@@ -1,7 +1,8 @@
 # csv_json_scripts
 # Utility script for converting and reshaping a CSV file with specific shape format to a output a JSON file with a required shape format.
 
-Python scripts to convert csv to json, to a certain hierarchy shape
+Python scripts to convert csv to json, to a certain hierarchy shape.
+
 Viceversa (TBA)
 
 This script is for an specific shape of csv file to be converted to json of a specific shape.
