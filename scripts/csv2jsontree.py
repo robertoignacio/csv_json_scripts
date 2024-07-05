@@ -50,10 +50,8 @@ def csv_to_json(csv_file, json_file):
     # This dictionary will store each activity as a key, with another dictionary as its value, mapping regions to their respective values for that activity.
     activities = {}
 
-    # Bugfix: Before removing the 'Region' column, store all region values
-    # to fix the bug at 
-    # activities[activity][row['Region']] = float(row[activity])
-    # then use the temp storage when setting the values in the activities dictionary
+    # Before removing the 'Region' column, store all region values.
+    # Then use the temp storage when setting the values in the activities dictionary
     regions = [] 
 
     # Read the input CSV file, open.
@@ -112,7 +110,8 @@ def csv_to_json(csv_file, json_file):
                 # At --> row[activity], activity is the current column header.
                 # Coerce the value to a float because values have to be float numeric
                 # activities[activity][row['Region']] = float(row[activity])
-                activities[activity][regions[i]] = float(row[activity])
+                # activities[activity][regions[i]] = float(row[activity])
+                activities[activity][regions[i]] = f"{float(row[activity]):.2f}%"
 
 
     # Convert the activities dictionary to a list of dictionaries.
