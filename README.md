@@ -21,7 +21,7 @@ South,1.5,1.6,1.7,1.8
 
 "Region" item will not be included in the JSON file output shape.
 
-JSON file required shape:
+Will output a JSON file with this required shape:
 
 ```
 [
